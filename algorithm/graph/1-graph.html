@@ -1,0 +1,531 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>graph · title</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-bibtex-indexed-cite/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../../kafka/1-kafkaServer.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"liuzhengyang","repo":"books","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    About
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">图书</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../books/1-深度工作.html">
+            
+                <a href="../../books/1-深度工作.html">
+            
+                    
+                    深度工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chap01</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../chap01/1-1.html">
+            
+                <a href="../../chap01/1-1.html">
+            
+                    
+                    1-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chap02</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../chap02/2-1.html">
+            
+                <a href="../../chap02/2-1.html">
+            
+                    
+                    2-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Kafka</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../kafka/1-kafkaServer.html">
+            
+                <a href="../../kafka/1-kafkaServer.html">
+            
+                    
+                    kafkaServer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Algorithm</li>
+        
+        
+    
+        <li class="chapter active" data-level="6.1" data-path="1-graph.html">
+            
+                <a href="1-graph.html">
+            
+                    
+                    graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >graph</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x65E0;&#x5411;&#x56FE;"><b></b>&#x65E0;&#x5411;&#x56FE;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5E38;&#x7528;&#x573A;&#x666F;"><b></b>&#x5E38;&#x7528;&#x573A;&#x666F;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5730;&#x56FE;"><b></b>&#x5730;&#x56FE;</a></li><li><span class="title-icon "></span><a href="#&#x8C03;&#x5EA6;"><b></b>&#x8C03;&#x5EA6;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5546;&#x4E1A;"><b></b>&#x5546;&#x4E1A;</a></li><li><span class="title-icon "></span><a href="#&#x5339;&#x914D;"><b></b>&#x5339;&#x914D;</a></li><li><span class="title-icon "></span><a href="#&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;"><b></b>&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;</a></li><li><span class="title-icon "></span><a href="#&#x8F6F;&#x4EF6;"><b></b>&#x8F6F;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#&#x793E;&#x4EA4;&#x7F51;&#x7EDC;"><b></b>&#x793E;&#x4EA4;&#x7F51;&#x7EDC;</a></li><li><span class="title-icon "></span><a href="#11-&#x65E0;&#x5411;&#x56FE;undirected-graph"><b></b>1.1 &#x65E0;&#x5411;&#x56FE;(undirected graph)</a></li><li><span class="title-icon "></span><a href="#12-&#x56FE;&#x7684;&#x4E0D;&#x540C;&#x8868;&#x793A;"><b></b>1.2 &#x56FE;&#x7684;&#x4E0D;&#x540C;&#x8868;&#x793A;</a></li><li><span class="title-icon "></span><a href="#depth-first-serach"><b></b>Depth-first serach</a></li><ul><li><span class="title-icon "></span><a href="#breadth-first-search"><b></b>Breadth-first search</a></li><li><span class="title-icon "></span><a href="#&#x8FDE;&#x901A;&#x5206;&#x91CF;connected-components"><b></b>&#x8FDE;&#x901A;&#x5206;&#x91CF;(connected components)</a></li><li><span class="title-icon "></span><a href="#symbol-graphs"><b></b>Symbol graphs</a></li></ul></ul></ul></div><a href="#&#x65E0;&#x5411;&#x56FE;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x65E0;&#x5411;&#x56FE;"><a name="&#x65E0;&#x5411;&#x56FE;" class="anchor-navigation-ex-anchor" href="#&#x65E0;&#x5411;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65E0;&#x5411;&#x56FE;</h1>
+<h2 id="&#x5E38;&#x7528;&#x573A;&#x666F;"><a name="&#x5E38;&#x7528;&#x573A;&#x666F;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x7528;&#x573A;&#x666F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E38;&#x7528;&#x573A;&#x666F;</h2>
+<h3 id="&#x5730;&#x56FE;"><a name="&#x5730;&#x56FE;" class="anchor-navigation-ex-anchor" href="#&#x5730;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5730;&#x56FE;</h3>
+<p>&#x5224;&#x65AD;&#x4E24;&#x4E2A;&#x70B9;&#x662F;&#x5426;&#x6709;&#x8DEF;&#x5F84;&#x76F8;&#x901A;&#x3001;&#x6700;&#x77ED;&#x8DDD;&#x79BB;&#x662F;&#x591A;&#x5C11;&#xFF0C;&#x6700;&#x77ED;&#x8DEF;&#x7A0B;&#x65F6;&#x95F4;&#x662F;&#x591A;&#x5C11;</p>
+<h3 id="&#x8C03;&#x5EA6;"><a name="&#x8C03;&#x5EA6;" class="anchor-navigation-ex-anchor" href="#&#x8C03;&#x5EA6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8C03;&#x5EA6;</h3>
+<p>&#x6709;&#x4E00;&#x4E9B;&#x4EFB;&#x52A1;&#x8981;&#x6267;&#x884C;&#xFF0C;&#x4EFB;&#x52A1;&#x4E4B;&#x95F4;&#x5B58;&#x5728;&#x4E00;&#x4E9B;&#x4F9D;&#x8D56;&#x9650;&#x5236;&#x5173;&#x7CFB;&#xFF0C;&#x5982;&#x4F55;&#x6267;&#x884C;&#x80FD;&#x591F;&#x65E2;&#x6EE1;&#x8DB3;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x65F6;&#x95F4;&#x53C8;&#x77ED;</p>
+<h2 id="&#x5546;&#x4E1A;"><a name="&#x5546;&#x4E1A;" class="anchor-navigation-ex-anchor" href="#&#x5546;&#x4E1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5546;&#x4E1A;</h2>
+<h2 id="&#x5339;&#x914D;"><a name="&#x5339;&#x914D;" class="anchor-navigation-ex-anchor" href="#&#x5339;&#x914D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5339;&#x914D;</h2>
+<h2 id="&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;"><a name="&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;" class="anchor-navigation-ex-anchor" href="#&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;</h2>
+<p>&#x5982;&#x4F55;&#x6709;&#x6548;&#x90E8;&#x7F72;&#x7F51;&#x7EDC;&#x7EBF;&#x8DEF;&#x548C;&#x4EA4;&#x6362;&#x673A;</p>
+<h2 id="&#x8F6F;&#x4EF6;"><a name="&#x8F6F;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x8F6F;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8F6F;&#x4EF6;</h2>
+<h2 id="&#x793E;&#x4EA4;&#x7F51;&#x7EDC;"><a name="&#x793E;&#x4EA4;&#x7F51;&#x7EDC;" class="anchor-navigation-ex-anchor" href="#&#x793E;&#x4EA4;&#x7F51;&#x7EDC;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x793E;&#x4EA4;&#x7F51;&#x7EDC;</h2>
+<p>application | item | connection</p>
+<p>map | intersection | road</p>
+<h2 id="11-&#x65E0;&#x5411;&#x56FE;undirected-graph"><a name="11-&#x65E0;&#x5411;&#x56FE;undirected-graph" class="anchor-navigation-ex-anchor" href="#11-&#x65E0;&#x5411;&#x56FE;undirected-graph"><i class="fa fa-link" aria-hidden="true"></i></a>1.1 &#x65E0;&#x5411;&#x56FE;(undirected graph)</h2>
+<p>edge &#x8FB9;
+vertice &#x70B9;</p>
+<blockquote>
+<p>A graph is a set of vertices and a collection of edges that each connect a pair of vertices.</p>
+</blockquote>
+<p>&#x6811;&#x662F;&#x65E0;&#x73AF;&#x8FDE;&#x901A;&#x56FE;&#x3002;&#x4E00;&#x4E9B;&#x4E0D;&#x76F8;&#x8FDE;&#x7684;&#x6811;&#x79F0;&#x4E3A;&#x68EE;&#x6797;&#x3002;&#x751F;&#x6210;&#x6811;&#x662F;&#x4E00;&#x4E2A;&#x8FDE;&#x901A;&#x56FE;&#x91CC;&#x7684;&#x94FE;&#x63A5;&#x6240;&#x6709;&#x9876;&#x70B9;&#x7684;&#x5B50;&#x56FE;&#x4E14;&#x662F;&#x4E00;&#x4E2A;&#x6811;&#x3002;&#x751F;&#x6210;&#x68EE;&#x6797;&#x662F;&#x6240;&#x6709;&#x8FDE;&#x901A;&#x5206;&#x91CF;&#x7684;&#x751F;&#x6210;&#x6811;&#x7684;&#x603B;&#x548C;</p>
+<p>graph G&#x6709;V&#x4E2A;&#x9876;&#x70B9;&#xFF0C;&#x5F53;&#x4E14;&#x4EC5;&#x5F53;&#x5982;&#x4E0B;&#x6EE1;&#x8DB3;&#x5982;&#x4E0B;5&#x4E2A;&#x6761;&#x4EF6;&#x65F6;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x6811;</p>
+<ol>
+<li>G&#x6709;V-1&#x4E2A;&#x8FB9;&#xFF0C;&#x6CA1;&#x6709;&#x73AF;</li>
+<li>G&#x6709;V-1&#x4E2A;&#x8FB9;&#xFF0C;&#x5E76;&#x4E14;&#x90FD;&#x662F;&#x76F8;&#x8FDE;&#x7684;</li>
+<li>G&#x662F;&#x8FDE;&#x901A;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x5220;&#x9664;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x8FB9;&#x90FD;&#x4E0D;&#x518D;&#x662F;&#x8FDE;&#x901A;&#x7684;</li>
+<li>G&#x662F;&#x65E0;&#x73AF;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x589E;&#x52A0;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x8FB9;&#x90FD;&#x4F1A;&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x73AF;</li>
+<li>&#x6BCF;&#x4E24;&#x4E2A;&#x9876;&#x70B9;&#x76F4;&#x63A5;&#x6709;&#x4E14;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x8DEF;&#x5F84;</li>
+</ol>
+<p>&#x53CC;&#x8272;&#x56FE;(bipartite graph)&#xFF0C;&#x662F;&#x4E00;&#x79CD;&#x53EF;&#x4EE5;&#x628A;&#x9876;&#x70B9;&#x5206;&#x6210;&#x4E24;&#x4E2A;&#x96C6;&#x5408;&#x7684;&#x56FE;&#xFF0C;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x9876;&#x70B9;&#x4E4B;&#x548C;&#x5176;&#x4ED6;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x9876;&#x70B9;&#x76F8;&#x8FDE;</p>
+<h2 id="12-&#x56FE;&#x7684;&#x4E0D;&#x540C;&#x8868;&#x793A;"><a name="12-&#x56FE;&#x7684;&#x4E0D;&#x540C;&#x8868;&#x793A;" class="anchor-navigation-ex-anchor" href="#12-&#x56FE;&#x7684;&#x4E0D;&#x540C;&#x8868;&#x793A;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2 &#x56FE;&#x7684;&#x4E0D;&#x540C;&#x8868;&#x793A;</h2>
+<ul>
+<li>&#x90BB;&#x63A5;&#x77E9;&#x9635;: &#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x4E3A;O(N^2)&#xFF0C;&#x65E0;&#x6CD5;&#x8868;&#x793A;&#x5E73;&#x884C;&#x8FB9;</li>
+<li>&#x90BB;&#x63A5;&#x94FE;&#x8868;: &#x66F4;&#x52A0;&#x901A;&#x7528;</li>
+</ul>
+<p>&#x5217;&#x8868;&#x6570;&#x7EC4;&#x8868;&#x793A;&#x6240;&#x6709;&#x7684;&#x90BB;&#x63A5;&#x94FE;&#x8868;&#xFF0C;&#x6216;&#x8005;&#x4F7F;&#x7528;Map&#x5B58;&#x50A8;</p>
+<p>decouple our implementations from the graph representation</p>
+<h2 id="depth-first-serach"><a name="depth-first-serach" class="anchor-navigation-ex-anchor" href="#depth-first-serach"><i class="fa fa-link" aria-hidden="true"></i></a>Depth-first serach</h2>
+<p>&#x641C;&#x7D22;&#x4E00;&#x4E2A;&#x56FE;&#xFF0C;&#x4F7F;&#x7528;&#x9012;&#x5F52;&#x7684;&#x65B9;&#x5F0F;&#x8BBF;&#x95EE;&#x6BCF;&#x4E00;&#x4E2A;&#x9876;&#x70B9;&#x3002;
+&#x8BBF;&#x95EE;&#x4E00;&#x4E2A;&#x9876;&#x70B9;&#x65F6;&#xFF0C;&#x5148;&#x6807;&#x8BB0;&#x8FD9;&#x4E2A;&#x9876;&#x70B9;&#x5DF2;&#x7ECF;&#x88AB;&#x8BBF;&#x95EE;&#x8FC7;&#x4E86;&#x3002;&#x7136;&#x540E;&#x9012;&#x5F52;&#x5730;&#x8BBF;&#x95EE;&#x8FD9;&#x4E2A;&#x9876;&#x70B9;&#x7684;&#x6CA1;&#x6709;&#x904D;&#x5386;&#x8FC7;&#x7684;&#x90BB;&#x63A5;&#x9876;&#x70B9;</p>
+<pre class="language-"><code>public class DepthFirstSearch {
+    private boolean[] marked;
+    public DepthFirstSearch(Graph g, int s) {
+        marked = new boolean[g.V()];
+        dfs(g, s);
+    }
+
+    private void dfs(Graph g, int v) {
+        marked[start] = true;
+        for (int w : G.adj(v)) {
+            if (!marked[w]) {
+                dfs(g, w);
+            }
+        }
+    }
+}
+</code></pre><p>tracing DFS</p>
+<p>DFS traverse&#x56FE;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x8FB9;&#x4E24;&#x6B21;&#xFF0C;&#x7B2C;&#x4E8C;&#x6B21;&#x603B;&#x662F;&#x4F1A;&#x53D1;&#x73B0;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x8BBF;&#x95EE;&#x8FC7;&#x7684;&#x9876;&#x70B9;&#x3002;</p>
+<p>&#x80FD;&#x591F;&#x7528;&#x4E8E;&#x89E3;&#x51B3;path detectino problem</p>
+<pre class="language-"><code>class Paths {
+    Paths(Graph g, int s);
+    boolean hasPathTo(int v);
+    Iterable<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Integer</span><span class="token punctuation">&gt;</span></span> pathTo(int v);
+}
+</code></pre><pre class="language-"><code>class DepthFirstPaths {
+    private boolean[] marked;
+    private int[] edgeTo;
+    private final S;
+    DepthFirstPaths(Graph G, int s) {
+        marked = new boolean[G.V()];
+        edgeTod = new int[G.V()];
+        this.s = s;
+        dfs(G, s);
+    }
+
+    private void dfs(Graph G, int v) {
+        marked[v] = true;
+        for (int w : G.adj(v)) {
+            if (!marked[w]) {
+                edgeTo[w] = v;
+                dfs(G, w);
+            }
+        }
+    }
+
+    public boolean hasPathTo(int v) {
+        return marked[v];
+    }
+
+    public Iterable<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Integer</span><span class="token punctuation">&gt;</span></span> pathTo(int v) {
+        if (!hashPathTo(v)) {
+            return null;
+        }
+        Stack<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Integer</span><span class="token punctuation">&gt;</span></span> path = new Stack<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Integer</span><span class="token punctuation">&gt;</span></span>();
+        for (int x = v; x != s; x = edgeTo[x]) {
+            path.push(x);
+        }
+        path.push(s);
+        return path;
+    }
+}
+</code></pre><h3 id="breadth-first-search"><a name="breadth-first-search" class="anchor-navigation-ex-anchor" href="#breadth-first-search"><i class="fa fa-link" aria-hidden="true"></i></a>Breadth-first search</h3>
+<blockquote>
+<p>Single-source shorted paths. &#x5355;&#x6E90;&#x6700;&#x77ED;&#x8DEF;&#x5F84;</p>
+</blockquote>
+<p>in DFS, we use pushdown stack(managed by system to support the recursive search method)</p>
+<p>In BFS, we use a (FIFO) queue instead of (LIFO) stack.</p>
+<p>We choose, of the passages yet to be explored, the one 
+that was least recently encountered</p>
+<p>It is based on maintaining a queue of all vertices that have
+been marked but whose adjacency lists have not been checked.
+We put the source vertex on the queue, then perform the 
+folling steps until the queue is empty.</p>
+<ul>
+<li>Take the next vertex v from the queue and mark it</li>
+<li>Put onto the queue all unmarked vertices that are adjacent to v</li>
+</ul>
+<pre class="language-"><code>private void bfs(Graph g, int s) {
+    Queue<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Integer</span><span class="token punctuation">&gt;</span></span> q = new Queue<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Integer</span><span class="token punctuation">&gt;</span></span>();
+    makred[s] = true;
+    q.enqueue(s);
+    while (!q.isEmpty) {
+        int v = q.dequeue();
+        for (int w : G.adj(v)) {
+            if (!makred[w]) {
+                edgeTo[w] = v;
+                marked[w] = true;
+                queue.enqueue(w);
+            }
+        }
+    }
+}
+</code></pre><h3 id="&#x8FDE;&#x901A;&#x5206;&#x91CF;connected-components"><a name="&#x8FDE;&#x901A;&#x5206;&#x91CF;connected-components" class="anchor-navigation-ex-anchor" href="#&#x8FDE;&#x901A;&#x5206;&#x91CF;connected-components"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FDE;&#x901A;&#x5206;&#x91CF;(connected components)</h3>
+<p>&#x7EF4;&#x62A4;&#x4E00;&#x4E2A;count&#x8BA1;&#x6570;&#xFF0C;dfs&#x904D;&#x5386;&#x8BB0;&#x5F55;&#x6BCF;&#x4E2A;&#x9876;&#x70B9;&#x7684;count&#x503C;&#xFF0C;&#x6BCF;&#x4E2A;&#x5206;&#x91CF;&#x904D;&#x5386;&#x5B8C;count++</p>
+<h3 id="symbol-graphs"><a name="symbol-graphs" class="anchor-navigation-ex-anchor" href="#symbol-graphs"><i class="fa fa-link" aria-hidden="true"></i></a>Symbol graphs</h3>
+<p>&#x6709;&#x4E00;&#x4E9B;&#x60C5;&#x51B5;&#x4E0D;&#x80FD;&#x5B8C;&#x5168;&#x7528;&#x6570;&#x7EC4;&#x6765;&#x8868;&#x793A;&#x3002;&#x4E00;&#x79CD;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x662F;&#x7528;&#x4E00;&#x4E2A;Map<string, integer="">
+&#x4FDD;&#x5B58;string&#x5230;id&#x7684;&#x6620;&#x5C04;&#xFF0C;&#x6216;&#x8005;&#x5B8C;&#x5168;&#x4F7F;&#x7528;Map</string,></p>
+<p>Problem | Solution 
+single-source connecivity | DFS
+single-source paths | DFS
+single-source shortest paths | BFS
+connectivity | CC
+cycle detection | Cycle
+two-colorability(bipartiteness) TwoColor</p>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> By <a href="https://github.com/liuzhengyang" target="_blank">liuzhengyang</a>&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB; &#x7F72;&#x540D;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 4.0&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2020-08-06 13:38:56 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../../kafka/1-kafkaServer.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: kafkaServer">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"graph","level":"6.1","depth":1,"previous":{"title":"kafkaServer","level":"5.1","depth":1,"path":"kafka/1-kafkaServer.md","ref":"./kafka/1-kafkaServer.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-sharing","disqus","github-buttons","editlink","ga","-highlight","prism","bibtex-indexed-cite","anchor-navigation-ex","page-footer-ex","splitter","todo","copy-code-button","expandable-chapters-small","donate"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"ignore":["mermaid","eval-js"],"css":["prismjs/themes/prism-solarizedlight.css"]},"disqus":{"useIdentifier":false,"shortName":"liuzhengyang-books"},"editlink":{"label":"Edit","multilingual":false,"base":"https://github.com/liuzhengyang/books/blob/master"},"todo":{},"page-footer-ex":{"copyright":"By [liuzhengyang](https://github.com/liuzhengyang)，使用[知识共享 署名-相同方式共享 4.0协议](https://creativecommons.org/licenses/by-sa/4.0/)发布","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"此页面修订于："},"splitter":{},"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook Use"]},"donate":{"alipay":"https://liuzhengyang.github.io/books/alipay.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://liuzhengyang.github.io/books/wechat.jpg","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"bibtex-indexed-cite":{"path":"/"},"github-buttons":{"buttons":[{"user":"liuzhengyang","repo":"books","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-131910384-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"bibCount":0,"variables":{},"title":"title","bib":[],"gitbook":"*"},"file":{"path":"algorithm/graph/1-graph.md","mtime":"2020-08-06T13:38:56.660Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-06T13:39:50.249Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-editlink/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
